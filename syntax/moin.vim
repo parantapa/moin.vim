@@ -10,12 +10,11 @@
 
 if version <600
     syntax clear
-elsif exists("b:current_syntax")
+elseif exists("b:current_syntax")
     finish
 endif
 
 syn clear
-hi clear
 
 " headings
 syn match       moinHeader              /^\(=\{1,5}\).*\1$/
